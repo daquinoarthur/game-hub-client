@@ -29,7 +29,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
             <Button
               fontSize="lg"
               fontWeight={isSelectedGenre(genre.id) ? "bold" : "normal"}
-              color={isSelectedGenre(genre.id) ? "purple.400" : "white"}
+              colorScheme={isSelectedGenre(genre.id) ? "purple" : "white"}
               variant="link"
               onClick={() => onSelectGenre(genre)}
             >
