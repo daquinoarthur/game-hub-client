@@ -1,5 +1,7 @@
+import ms from "ms";
+
 export const TIME = {
-  HOUR: 60 * 60 * 1000,
-  DAY: 24 * 60 * 60 * 1000,
-  WEEK: 7 * 24 * 60 * 60 * 1000,
+  HOUR: ms("1h"),
+  DAY: ms("1d"),
+  WEEK: ms("7 days"),
 } as const;
