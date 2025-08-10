@@ -1,15 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
-import initialData from "../data/platforms";
-import APIClient from "../services/api-client";
 import { TIME } from "../constants/time";
+import initialData from "../data/platforms";
+import { Platform } from "../entities/Platform";
+import APIClient from "../services/api-client";
 
 const apiClient = new APIClient<Platform>("/platforms");
-
-export interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
 
 const usePlatforms = () =>
   useQuery({
