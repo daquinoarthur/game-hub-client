@@ -16,18 +16,18 @@ const ExpandableText = ({ children }: Props) => {
   const summary = children.substring(0, limit) + "...";
 
   return (
-    <Text>
-      {expanded ? children : summary}
+    <>
+      <Text>{expanded ? children : summary}</Text>
       <Button
         size="xs"
         fontWeight="bold"
         colorScheme="purple"
         onClick={() => setExpanded(!expanded)}
-        marginLeft={2}
+        marginTop={2}
       >
         {expanded ? "Show Less" : "Read More"}
       </Button>
-    </Text>
+    </>
   );
 };
 
