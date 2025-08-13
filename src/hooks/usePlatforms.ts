@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { TIME } from "../constants/time";
 import initialData from "../data/platforms";
-import { Platform } from "../entities/Platform";
+import Platform from "../entities/Platform";
 import APIClient from "../services/api-client";
 
 const apiClient = new APIClient<Platform>("/platforms");
